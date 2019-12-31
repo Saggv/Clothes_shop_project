@@ -1,0 +1,22 @@
+@import './Sass/mixin.scss';
+@import './Sass/variable.scss';
+@import './Sass/Homepage.scss';
+@import './Sass/Base.scss';
+@import './Sass/Component/Navigation.scss';
+@import './Sass/Component/Btn.scss';
+@import './Sass/Component/Form.scss';
+@import './Sass//Component/Slide.scss';
+@import './Sass/Component/Nowurl.scss';
+@import './Sass/Component/Tabshop.scss';
+@import './Sass/Component/Pagination.scss';
+@import './Sass/Component/Footer.scss';
+@import './Sass/Component/Detail-item.scss';
+@import './Sass/Component/Comment.scss';
+@import './Sass/Component/InputComment.scss';
+@import './Sass/Component/Show.scss';
+@import './Sass/Profile.scss';
+@import './Sass/Component/Cart.scss';
+@import './Sass/Component/Popu.scss';
+.App{
+  background-image: linear-gradient(red,white);
+}

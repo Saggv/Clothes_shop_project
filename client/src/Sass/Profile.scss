@@ -1,0 +1,164 @@
+.profile{
+    background: $white--3;
+    width: 100%;
+    min-height: 100vh;
+    &__flex{
+        display: flex;
+        @include respond(tab-port){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__user{
+        flex:0 0 25%;
+        padding: 4rem 1rem;
+        background: $white--1;
+        min-height: 100vh;
+        box-sizing: border-box;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+        @include respond(tab-port){
+           min-height: 40vh;
+           width:calc(100%/1.03);
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+        &__info{
+            display: flex;
+            align-items: center;
+            & img{
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+            }
+            &--ac{
+                margin-left: 1rem;
+                & p{
+                    font-size: 1.6rem;
+                    color: $black--1;
+                    line-height: 2rem;
+                }
+            }
+        }
+        &__detail{
+            margin:1rem 0;
+            & p{
+                &:nth-child(1){
+                    font-size: 1.6rem;
+                }
+            }
+            & textarea{
+                font-size: 2rem;
+                color: $black--1;
+                outline: none;
+                border: none;
+                margin-left: 1rem;
+                @include respond(tab-port){
+                    font-size: 2.3rem;
+                 }
+            }
+        }
+    }
+    &__content{
+        @include respond(phone){
+            width: 100%;
+            padding: 0;
+        }
+        flex: 0 0 75%;
+        box-sizing: border-box;
+        padding: 2rem;
+    }
+    &__filter{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        width:100%;
+        background-color: $white--1;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+        &__items{
+            font-size: 1.6rem;
+            font-weight: 600;
+            color:$black--1;
+            padding:1.5rem 2rem;
+            cursor: pointer;
+            @include respond(phone){
+                padding: 1.5rem 0;
+                width: calc(100%/5);
+                font-size: 1.3rem;
+                text-align: center;
+            }
+            &:hover{
+                color:$pink--1;
+            }
+        }
+    }
+
+    &__item{
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        background: $white--1;
+        padding: 1rem 2rem;
+        margin:1rem 0;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+        // @include respond(phone){
+        //     flex-direction: column;justify-content: center;
+        //     align-items: center;
+        // }
+        & img{
+            width: 10rem;
+            height: 7rem;
+            margin-right: 2rem;
+            @include respond(phone){
+                margin-right: 1rem;
+            }
+        }
+        &__info{
+            @include respond(phone){
+                margin-top: 1rem;
+            }
+            &__detail{
+                &__item{
+                    display: flex;
+                    flex-wrap: wrap;
+                    @include respond(phone){
+                        flex-direction: column;
+                    }
+                    & p{
+                        flex: 0 0 50%;
+                        color: $black--1;
+                        font-weight: 600;
+                        font-size: 1.6rem;
+                        @include respond(phone){
+                            font-size: 1.3rem;
+                        }
+
+                        & span{
+                            font-size: 1.7rem;
+                            color: rgba(0, 0, 0, 0.76);
+                            @include respond(phone){
+                                font-size: 1.3rem;
+                            }
+
+                        }
+                    }
+                }
+            }
+            &__pr{
+                text-align: right;
+                font-weight: 600;
+                font-size: 1.8rem;
+                @include respond(phone){
+                    font-size: 1.5rem;
+                }
+                & span{
+                    color: $pink--1;
+                }
+            }
+        }
+    }
+}

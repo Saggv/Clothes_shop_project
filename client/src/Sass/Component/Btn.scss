@@ -1,0 +1,139 @@
+.btn-primary{
+    border-radius:3rem;
+    background: $pink--1;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:1.6rem;
+    padding:1.4rem 5rem;
+    text-decoration: none;
+    color: $white--1;
+    margin-top:3rem;
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    @include respond(phone){
+        padding: .8rem 5rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+}
+.btn-secondary{
+    border-radius:3rem;
+    background: $pink--1;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:1.6rem;
+    padding:1.4rem 5rem;
+    text-decoration: none;
+    color: $white--1;
+    margin-top:3rem;
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(.5rem);
+    @include respond(phone){
+        padding: .8rem 5rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+}
+.btn__submit{
+    border:none;
+    outline: none;
+    background: $white--2;
+    text-align: center;
+    width: 11.8rem;
+    height: 5rem;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    @media (max-width: 69em){
+        margin-top: 2rem;
+    };
+
+    &--footer{
+        background: rgba($pink--1, .8);
+        height: 4rem;
+        font-size: 1.6rem;
+        @media (max-width: 69em){
+            margin-top: 0;
+        };
+    }
+}
+
+.btn-viewmore{
+    border:none;
+    outline: none;
+    background:none;
+    border-bottom: 1px solid $pink--1;
+    cursor: pointer;
+
+}
+.chevron{
+    width:4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: $pink--1;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    @include respond(phone){
+        background: rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(2px);
+    }
+    &__icon{
+        font-size: 2rem;
+        color: $white--1;
+    }
+    &__prev{
+        left: -2rem;
+        @include respond(phone){
+            left:0;
+        }
+    }
+    &__next{
+        right:-2rem;
+        @include respond(phone){
+            right:0;
+        }
+    }
+}
+
+
+
+// header
+.header{
+
+    &--1{
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: $black--2;
+    }
+}
+
+
+// DOT-ICON
+.dot-icon{
+    &__item{
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background: $white--1;
+        border-radius: 50%;
+        margin:0 .5rem;
+        position: relative;
+        z-index: 5;
+
+        &--active{
+            background: $pink--1;
+        }
+    }
+}

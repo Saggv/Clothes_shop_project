@@ -1,0 +1,52 @@
+.form{
+    @include respond(tab-port){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__input{
+        display: inline-block;
+        border:1px solid $black--1;
+        width: 35rem;
+        height:5rem;
+        background:#fff;
+        margin-right: 2rem;
+        font-size: 1.8rem;
+        padding-left: 2rem;
+        box-sizing: border-box;
+        font-weight: 500;
+        @include respond(tab-port){
+          margin-top: 1rem;
+          margin-right: 0;
+        }
+    }
+}
+
+
+.quote{
+    font-family: 'Sanchez', serif;
+    font-size: 9rem;
+    color: $pink--1;
+    display: block;
+    line-height: 3rem;
+
+    &__top{
+        margin-bottom: -2rem;
+    }
+    &__bottom{
+        text-align: right;
+    }
+}
+
+
+.email{
+    display: inline-block;
+    width:40rem;
+    height:4rem;
+    border:none;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding:0 2rem;
+    box-sizing: border-box;
+}

@@ -1,0 +1,215 @@
+.detail{
+    background: $white--3;
+}
+.detail-item{
+    & h1{
+        text-align: center;
+        font-size: 3.5rem;
+        color: $black--1;
+    }
+    &__box{
+        display: flex;
+        margin-top: 3rem;
+        @include respond(tab-port){
+            flex-direction: column;
+            align-items: center;
+        }
+        &__img{
+            width: calc(100%/3);
+            @include respond(tab-port){
+                width: calc(100%/1.11);
+            }
+            &--box{
+                overflow: hidden;
+                height: 65rem;
+                width: 100%;
+                @include respond(tab-lands){
+                    height: 52rem;
+                }
+                @include respond(phone){
+                    height: 50rem;
+                }
+                & img{
+                    width: 100%;
+                    object-fit: cover;
+                    height: 100%;
+                    transition: 2s;
+
+                    &:hover{
+                    transform: scale(1.4);
+                    }
+                }
+            }
+        }
+
+        &--color{
+            list-style: none;
+            display:flex;
+            justify-content: center;
+            margin-top: 1rem;
+            & li{
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                margin:0 1rem;
+                &:nth-child(1){
+                    background: #FB0606;
+                }
+                &:nth-child(2){
+                    background: #6706FB;
+                }
+                &:nth-child(3){
+                    background: #06FBEA;
+                }
+                &:nth-child(4){
+                    background: #35FB06;
+                }
+            }
+        }
+    }
+
+    &__des{
+        width: calc(100%/1.43);
+        @include respond(tab-port){
+            width: calc(100%/1);
+            padding: 0 1rem;
+            padding-top: 2rem;
+        }
+
+        padding:0 5rem;
+        padding-top:2rem;
+        box-sizing: border-box;
+
+        &__price{
+            width: 20rem;
+            padding: 1rem 0;
+            border: 2px solid $white--1;
+            font-weight: 600;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        &__amount{
+            margin-top: 3rem;
+            & span{
+                font-size: 1.6rem;
+                font-weight: 600;
+                display: inline-block;
+                
+                &:not(:first-child){
+                    padding: .5rem 1rem;
+                    margin:0 1rem;
+                }
+                &:nth-child(2),
+                &:nth-child(4){
+                    background: $white--1;
+                }
+            }
+        }
+
+        &__size{
+            margin-top:3rem;
+            & span{
+                font-size: 1.6rem;
+                font-weight: 600;
+
+                &:not(:first-child){
+                    padding: .5rem 1rem;
+                    margin:0 1rem;
+                    background: $white--1;
+                }
+            }
+        }
+
+        &__star{
+            margin-top: 3rem;
+            &-icon{
+                font-size: 1.6rem;
+                color: yellow;
+                padding: 0 .5rem;
+
+                &:last-child{
+                    display: inline-block;
+                    margin-right: 1rem;
+                }
+            }
+        }
+        &__trans{
+            margin-top: 4rem;
+            @include respond(tab-port){
+                margin-top: 1rem;
+            }
+            & p{
+                margin-left: 3rem;
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+            }
+        }
+        &__action{
+            margin-top: 5rem;
+            @include respond(tab-port){
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    &__propety{
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        &--il{
+            display: inline-block;
+            width: 10rem;
+        }
+        &--bl{
+            display: block;
+            width: 50rem;
+        }
+    }
+
+}
+
+// descript-procuct;
+.detali-descp{
+    margin-top:5rem;
+    background: $white--1;
+    padding:2rem;
+    & h3{
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    & p{
+        font-size: 1.8rem;
+        color: $black--1;
+        line-height: 3rem;
+        margin-left: 1rem;
+        font-weight: 600;
+        @include respond(phone){
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.detail-vote{
+    &__title{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    &__star{
+        display: flex;
+        justify-content: center;
+        padding:1rem 0;
+    }
+}
+
+.xemthem{
+    text-align: center;
+}
+
+.viewmore{
+    position: relative;
+    margin-top: 5rem;
+}

@@ -1,0 +1,30 @@
+.url{
+    background: $white--3;
+    padding: 1rem 0;
+
+    &__list{
+        list-style: none;
+        display: flex;
+        
+        &__item{
+            position: relative;
+            & a{
+                text-decoration: none;
+                color: $black--1;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding:0 1.6rem;
+            }
+        }
+        &__item:not(:last-child)::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            width: 2px;
+            height: 160%;
+            background: $white--1;
+        }
+    }
+}

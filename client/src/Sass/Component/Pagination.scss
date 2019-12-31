@@ -1,0 +1,16 @@
+.pagination{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top:3rem;
+
+    &__item{
+
+        & a{
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: $black--1;
+            padding: 1rem 2rem;
+        }
+    }
+}

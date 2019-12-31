@@ -1,0 +1,39 @@
+// FOOTER
+.footer{
+    background: $white--2;
+    text-align: center;
+    padding:7rem 0;
+
+    &__nav{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top:5rem;
+
+        &__item{
+            @include respond(phone){
+               width: calc(100%/4);
+               text-align: left;
+            }
+        }
+
+        &__item a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: $black--1;
+            font-weight: 500;
+            padding: 0 5rem;
+            text-transform: uppercase;
+            @include respond(phone){
+               padding: 0;
+             }
+
+        }
+    }
+
+    &__form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
