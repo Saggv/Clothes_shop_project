@@ -9,9 +9,6 @@ const resolversQL = require("./graphql/Resolvers");
 const app = express();
 
 app.use(isAuth);
-app.get("/", (req, res, next)=>{
-    res.send("helsdfs");
-})
 app.use("/graphql", graphqlHttp({
     schema: schemaGraphql,
     rootValue: resolversQL,
