@@ -13,7 +13,8 @@ function Cart(){
         const userCookie = "userCookie";
         const cookie = getCookie(userCookie);
         if(cookie.length === 0){
-            document.cookie = 'userCookie= sangs';
+            let  cookieValue = Math.floor(Math.random() * 1000000);
+            document.cookie = `userCookie= ${cookieValue}`;
         }
          dispatch(getCartProduct());
     },[])
