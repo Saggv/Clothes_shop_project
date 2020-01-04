@@ -39,7 +39,7 @@ function Cart(){
     }
     const totalPrice = (arr)=>{
          let result = cartProduct.reduce((cur, next)=>{
-             return next.amount * next.productId.price
+             return next.amount * next.productId.price + cur
          },0);
          return result;
     }
