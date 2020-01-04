@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from "react";
 import {Showitem, Showitemmain} from "../Component/Showitem";
-import user  from "../Images/trend4.jpg";
+import userImg  from "../Images/trend4.jpg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight,   } from '@fortawesome/free-solid-svg-icons';
@@ -55,13 +55,13 @@ class Show extends Component{
         }
     }
     render(){
-        const {showImg} =this.props;
+        const {showImg, users} =this.props;
         return(
             <Fragment>
                 <div className="show">
                     <div className="container">
                         <div className="show__user">
-                            <img src={user} alt="dsfdsf" />
+                            <img src={users.hasOwnProperty('avatar') ? users.avatar : userImg} alt="dsfdsf" />
                         </div>
                         <div className="show__broad">
                             <button className="prev prev__top"  onClick={()=>this.prevClick()}>
@@ -89,7 +89,8 @@ class Show extends Component{
     }
 }
 const mapStateToProps = state=>({
-    showImg: state.Show.showImg
+    showImg: state.Show.showImg,
+    users: state.SignIn.user
 })
 
 const mapDispatchToProps = dispatch=>({

@@ -26,6 +26,9 @@
     padding-bottom:11rem;
     background: $white--3;
     box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
+    @include respond(phone){
+        min-height: 36rem;
+    }
 
     &__flex{
         display: flex;
