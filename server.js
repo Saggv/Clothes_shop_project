@@ -39,10 +39,6 @@ app.use("/graphql", graphqlHttp({
     graphiql: true
 }))
 
-app.get("/", (req, res)=>{
-     res.send("heelosddf");
-})
-
 mongoose.connect(process.env.MONGOOSEURL, 
         {useUnifiedTopology: true,  useNewUrlParser: true, useFindAndModify: false })
         .then(data=>{
