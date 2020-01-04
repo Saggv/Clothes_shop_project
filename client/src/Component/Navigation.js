@@ -46,7 +46,7 @@ function Navigation(){
                                 <NavLink className="nav__list__link" to="/manshop">Man</NavLink>
                             </li>
                             <li className="nav__list__items">
-                                <NavLink to="/wonmenshop"><FontAwesomeIcon icon={faFemale} className="icon" /></NavLink>
+                                <NavLink to="/womenshop"><FontAwesomeIcon icon={faFemale} className="icon" /></NavLink>
                                 <NavLink className="nav__list__link" to="/womenshop">Woman</NavLink>
                             </li>
                             <li className="nav__list__items relative" onClick ={()=>dispatch(openCart())}>
